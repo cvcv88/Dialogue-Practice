@@ -1,0 +1,5 @@
+{
+    "scripts1": "1",
+    "scripts2": "2",
+    "scripts3": "3"
+}
