@@ -33,7 +33,6 @@ namespace DialogueSystem
 			imageHolder.sprite = characterSprite;
 			imageHolder.preserveAspect = true;
 		}
-
 		private void Start()
 		{
 			StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));

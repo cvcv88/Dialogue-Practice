@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d986e048da1447bdd69ef91ece901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: hahahaha i'm UNDYNE!!
+  input: '* hahaha I''m UNDYNE!'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a1ae9a447693b6e4f89ea2ae8ee241ca, type: 3}
   delay: 0.1
@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 497352200}
   - component: {fileID: 497352199}
   - component: {fileID: 497352201}
+  - component: {fileID: 497352202}
   m_Layer: 5
   m_Name: DialogueHolder
   m_TagString: Untagged
@@ -458,6 +459,18 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &497352202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497352197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc6e2cfa20d41b479af6ae7f9013fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10d986e048da1447bdd69ef91ece901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: Example Text
+  input: '* abcd efg hijk lmn opqr stu vwzyz'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a1ae9a447693b6e4f89ea2ae8ee241ca, type: 3}
   delay: 0.1

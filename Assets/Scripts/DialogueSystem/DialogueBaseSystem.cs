@@ -13,15 +13,22 @@ namespace DialogueSystem
 		{
 			textHolder.color = textColor;
 			textHolder.font = textFont;
+
 			for(int i = 0; i < input.Length; i++)
 			{
+				if (Input.GetKey(KeyCode.X))
+				{
+					for(int j = i; j < input.Length; j++)
+					{
+						textHolder.text += input[j];
+					}
+					i = input.Length - 1;
+				}
 				textHolder.text += input[i];
-				// play letter sound
 				SoundManager.instance.PlaySound(sound);
 				yield return new WaitForSeconds(delay);
 			}
-			// yield return new WaitForSeconds(delayBetweenLines);
-			yield return new WaitUntil(() => Input.GetMouseButton(0));
+			yield return new WaitUntil(() => Input.GetKey(KeyCode.Z));
 
 			finished = true;
 		}
