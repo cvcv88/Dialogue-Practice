@@ -63,15 +63,22 @@ public class JsonTestScript : MonoBehaviour
 			Debug.Log("저장한 데이터 없음");
 		}
 	}
+	static int count = 0;
 	IEnumerator TypeLine1(GameData gamedata)
 	{
 		yield return new WaitForSeconds(0.1f); 
-		print(gameData.scripts1);
+		foreach(var i in  gamedata.scripts)
+		{
+			print(gamedata.scripts[count]);
+			yield return new WaitForSeconds(1f);
+			count++;
+		}
+		/*print(gameData.scripts1);
 		yield return new WaitForSeconds(1f);
 		print(gameData.scripts2);
 		yield return new WaitForSeconds(1f);
 		print(gameData.scripts3);
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(1f);*/
 		a = true;
 	}
 }
@@ -79,8 +86,9 @@ public class JsonTestScript : MonoBehaviour
 [Serializable]
 public class GameData
 {
-	public string scripts1 = "1";
+	public string[] scripts = { "1", "2", "3" };
+	/*public string scripts1 = "1";
 	public string scripts2 = "2";
-	public string scripts3 = "3";
+	public string scripts3 = "3";*/
 
 }
